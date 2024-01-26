@@ -578,7 +578,7 @@ describe('Table.filter', () => {
     expect(container.querySelectorAll('tbody tr').length).toBe(4);
   });
 
-  it('can filter children by defaultFilteredValue', () => {
+  it('can filter children by defaultFilteredValue', async () => {
     const { container } = render(
       createTable({
         columns: [
